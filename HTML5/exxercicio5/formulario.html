@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscriçao</title>
+</head>
+<body>
+    
+<h1>Formulario de Inscriçao</h1>
+
+<form >
+    <div>
+    <label for="nome">Nome:</label> <br>
+    <input type="text" id="nome" name="nome" required>
+    <br><br>
+</div>
+<div>
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" id="email">
+    <br><br>
+</div>
+<div>
+    <label for="whatsapp">Whatsapp:</label><br>
+    <input type="tel" name="telefone" id="whatsapp">
+    <br><br>
+</div>
+<div>
+    <label >Area de Atuaçao:</label>
+    <input type="radio" name="area" id="dev" value="dev" required>
+    <label for="dev">Desenvolvimento</label>
+
+    <input type="radio" name="area" id="qa" value="qa" required>
+    <label for="qa">Quality Assurance (QA)</label>
+
+    <input type="radio" name="area" id="dados" value="dados" required>
+    <label for="dados">Análise de Dados</label>
+
+    <input type="radio" name="area" id="infra" value="infra" required>
+    <label for="infra">Infraestrutura</label>
+    <br><br>
+</div>
+<div>
+    <label for="sobre">Observaçoes:</label> <br>
+    <textarea name="sobre" id="sobre" cols="40" rows="3" placeholder="..."></textarea>
+    <br><br>
+</div>
+<div>
+    <input type="checkbox" name="area" id="infra" value="infra" required>
+    <label for="infra">Desejo receber informaçoes por Email.</label>
+</div>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+
+
+</body>
+</html>
