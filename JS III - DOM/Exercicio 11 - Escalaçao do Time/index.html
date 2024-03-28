@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praticando a Manipulação do DOM</title>
+  <script src="./index.js"></script>
+</head>
+<body>
+  <h1>Estalaçao do Time</h1>
+  <hr>
+  <h2>Escalar Jogador </h2>
+  <label for="position">Posição:</label> 
+  <input type="position" name="position" id="position">
+
+  <label for="name">Nome:</label> 
+  <input type="text" name="name" id="name">
+
+  <label for="number">Numero:</label> 
+  <input type="text" name="number" id="number">
+  <br>
+  <br>
+  <button onclick="addPlayer()">Escalar Jogador</button>
+
+<br>
+<br>
+<h2>Remover Jogador </h2>
+  <label for="numberToRemove">Remover Jogador:</label> 
+  <input type="text" name="numberToRemove" id="numberToRemove">
+  <br>
+<br>
+  <button onclick="removePlayer()">Remover Jogador</button>
+
+  <h2>Time</h2>
+  <ul id="teamlist"></ul>
+</body>
+</html>

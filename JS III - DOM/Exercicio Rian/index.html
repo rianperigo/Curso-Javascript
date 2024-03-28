@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praticando a Manipulação do DOM</title>
+  <script src="./index.js"></script>
+</head>
+<body>
+  <h1>Motoristas de Caminhao</h1>
+  <hr>
+  <h2>Adicionar Motorista </h2>
+  <label for="caminhao">Caminhao:</label> 
+  <input type="text" name="caminhao" id="caminhao">
+
+  <label for="nome">Nome:</label> 
+  <input type="text" name="nome" id="nome">
+
+  <label for="rg">Numero Do RG:</label> 
+  <input type="text" name="rg" id="rg">
+  <br>
+  <br>
+  <button onclick="addMotora()">Adicionar Motorista</button>
+
+<br>
+<br>
+<h2>Remover Motorista </h2>
+  <label for="rgRemove">Remover Motorista:</label> 
+  <input type="text" name="rgRemove" id="rgRemove">
+  <br>
+<br>
+  <button onclick="removermotora()">Remover Motorista</button>
+
+  <h2>Lista de Motoristas</h2>
+  <ul id="motoralista"></ul>
+</body>
+</html>

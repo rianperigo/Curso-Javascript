@@ -107,33 +107,37 @@ function exibirMenu(){
   return opção
 }
 
-do{
+function executar() {
+  let opcao = ""
 
-  switch(opção){
-    case "1":
-    listarVagas()
-    break
-    case "2":
-    novaVaga()
-    break
-    case "3":
-    exibirVaga()
-    break
-    case "4":
-    increverCandidato()
-    break
-    case "5":
-    excluirVaga()
-    break
-    case "6":
-    alert("Saindo...")
-    break
-    default:
-      alert("Opçao Invalida")
+  do {
+    opcao = exibirMenu()
 
-  }
-}while( opcao !== "6")
+    switch (opcao) {
+      case "1":
+        listarVagas()
+        break
+      case "2":
+        novaVaga()
+        break
+      case "3":
+        exibirVaga()
+        break
+      case "4":
+        inscreverCandidato()
+        break
+      case "5":
+        excluirVaga()
+      case "6":
+        alert("Saindo...")
+        break
+      default:
+        alert("Opção inválida.")
+    }
 
+  } while (opcao !== "6");
+}
 
+executar()
 
 
